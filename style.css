@@ -1724,3 +1724,155 @@ body.high-contrast .body-svg-site.active-site {
   fill: #ffff00;
   stroke: #ffffff;
 }
+
+/* ==========================================================================
+   Language Splash Screen Styles
+   ========================================================================== */
+.language-splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(12, 25, 44, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.language-splash.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.splash-card {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius-lg);
+  max-width: 500px;
+  width: 90%;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: scaleIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.splash-logo {
+  font-size: 3.5rem;
+  color: var(--secondary);
+  background-color: rgba(15, 118, 110, 0.08);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid rgba(15, 118, 110, 0.15);
+}
+
+.splash-title {
+  font-size: calc(1.7rem * var(--font-scale));
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.splash-subtitle {
+  font-size: calc(1.1rem * var(--font-scale));
+  color: var(--text-muted);
+}
+
+.splash-subtitle-ar {
+  font-size: calc(1.1rem * var(--font-scale));
+  color: var(--text-muted);
+  margin-top: -0.5rem;
+}
+
+.splash-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.splash-btn {
+  flex: 1;
+  height: 60px;
+  border: none;
+  border-radius: var(--border-radius-md);
+  background-color: var(--secondary);
+  color: #ffffff;
+  font-size: calc(1.2rem * var(--font-scale));
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.splash-btn:hover, .splash-btn:focus {
+  transform: translateY(-2px);
+  background-color: var(--primary);
+  outline: none;
+}
+
+/* High Contrast mode for Splash Screen */
+body.high-contrast .language-splash {
+  background-color: #000000;
+  backdrop-filter: none;
+}
+
+body.high-contrast .splash-card {
+  background-color: #000000;
+  border: 3px solid #ffffff;
+  box-shadow: none;
+}
+
+body.high-contrast .splash-logo {
+  color: #ffff00;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}
+
+body.high-contrast .splash-title {
+  color: #ffffff;
+}
+
+body.high-contrast .splash-subtitle,
+body.high-contrast .splash-subtitle-ar {
+  color: #ffffff;
+}
+
+body.high-contrast .splash-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+body.high-contrast .splash-btn:hover {
+  background-color: #ffff00;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

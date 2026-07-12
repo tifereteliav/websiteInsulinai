@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הדרכות אינסולין - מרכז מידע רפואי נגיש ואינטראקטיבי</title>
+  <meta name="description" content="אתר הדרכות אינסולין וסוכרת נגיש, מקצועי ואינטראקטיבי המותאם במיוחד לגיל השלישי. כולל סימולטורים, פודקאסטים, מצגות ואינפוגרפיקה.">
+  <!-- Google Fonts: Heebo & Rubik -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons for modern design -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- אזהרה רפואית עליונה קבועה - Medical Top Banner -->
+  <div class="top-disclaimer" id="topDisclaimer">
+    <i class="fa-solid fa-circle-info"></i>
+    <span>המידע באתר זה נועד להעשרה והדרכה בלבד ואינו מחליף התייעצות עם צוות רפואי מוסמך.</span>
+  </div>
+
+  <!-- סרגל נגישות וכותרת ראשית - Header & Accessibility Controls -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-section">
+        <div class="logo-icon">
+          <i class="fa-solid fa-prescription-bottle-medical"></i>
+        </div>
+        <div>
+          <h1 class="main-title" id="siteTitle">הדרכות אינסולין</h1>
+          <p class="site-tagline" id="siteTagline">מרכז הדרכה דיגיטלי ונגיש לטיפול בסוכרת</p>
+        </div>
+      </div>
+      
+      <!-- פאנל נגישות - Accessibility Toolbar -->
+      <div class="accessibility-toolbar" role="toolbar" aria-label="סרגל נגישות">
+        <div class="control-group">
+          <span class="control-label"><i class="fa-solid fa-text-height"></i> גודל גופן:</span>
+          <button id="btnFontDec" class="acc-btn" aria-label="הקטן גופן">א-</button>
+          <button id="btnFontReset" class="acc-btn" aria-label="גופן רגיל">א</button>
+          <button id="btnFontInc" class="acc-btn" aria-label="הגדל גופן">א+</button>
+        </div>
+        <div class="control-group">
+          <span class="control-label"><i class="fa-solid fa-circle-half-stroke"></i> ניגודיות:</span>
+          <button id="btnContrastToggle" class="acc-btn btn-wide" aria-label="שנה מצב ניגודיות">ניגודיות גבוהה</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- אזור הגיבור - Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2 id="heroHeading">לומדים על אינסולין בקלות ובבטחה</h2>
+      <p id="heroSubheading">ריכזנו עבורכם את כל ההסברים, הטיפים והכלים לניהול נכון של הטיפול באינסולין. האתר מותאם לקריאה נוחה וברורה, ומציע מגוון דרכים ללמוד: סרטונים, קטעי שמע, מצגות ומשחקי הדמיה מהנים.</p>
+    </div>
+  </section>
+
+  <!-- רשת הקטגוריות המרכזית - Main Categories Grid -->
+  <main class="container">
+    <h3 class="section-title" id="gridTitle">אנא בחרו נושא להדרכה:</h3>
+    
+    <div class="categories-grid" id="categoriesGrid">
+      
+      <!-- קטגוריה 1: מה זה אינסולין -->
+      <button class="category-card" data-category="what-is-insulin" id="catWhatIs">
+        <div class="card-icon"><i class="fa-solid fa-dna"></i></div>
+        <div class="card-body">
+          <h4 class="card-title">מה זה אינסולין?</h4>
+          <p class="card-desc">הסבר פשוט על תפקיד ההורמון בגוף ומדוע הוא חיוני.</p>
+        </div>
+        <div class="card-action">התחל ללמוד <i class="fa-solid fa-chevron-left"></i></div>
+      </button>
+
+      <!-- קטגוריה 2: הזרקת אינסולין -->
+      <button class="category-card" data-category="insulin-injection" id="catInjection">
+        <div class="card-icon"><i class="fa-solid fa-syringe"></i></div>
+        <div class="card-body">
+          <h4 class="card-title">הזרקת אינסולין</h4>
+          <p class="card-desc">טכניקת הזרקה נכונה, סבב מקומות הזרקה ותפעול העט.</p>
+        </div>
+        <div class="card-action">התחל ללמוד <i class="fa-solid fa-chevron-left"></i></div>
+      </button>
+
+      <!-- קטגוריה 3: היפרגליקמיה -->
+      <button class="category-card" data-category="hyperglycemia" id="catHyper">
+        <div class="card-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <div class="card-body">
+          <h4 class="card-title">היפרגליקמיה</h4>
+          <p class="card-desc">רמות סוכר גבוהות: איך מזהים, מהן הסכנות וכיצד מטפלים.</p>
+        </div>
+        <div class="card-action">התחל ללמוד <i class="fa-solid fa-chevron-left"></i></div>
+      </button>
+
+      <!-- קטגוריה 4: היפוגליקמיה -->
+      <button class="category-card" data-category="hypoglycemia" id="catHypo">
+        <div class="card-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+        <div class="card-body">
+          <h4 class="card-title">היפוגליקמיה</h4>
+          <p class="card-desc">רמות סוכר נמוכות: סימני אזהרה וכיצד פועלים לפי חוק 15-15.</p>
+        </div>
+        <div class="card-action">התחל ללמוד <i class="fa-solid fa-chevron-left"></i></div>
+      </button>
+
+      <!-- קטגוריה 5: מיתוסים בטיפול -->
+      <button class="category-card" data-category="myths" id="catMyths">
+        <div class="card-icon"><i class="fa-solid fa-circle-question"></i></div>
+        <div class="card-body">
+          <h4 class="card-title">מיתוסים בטיפול</h4>
+          <p class="card-desc">עובדות ומיתוסים נפוצים על הטיפול והשפעתו על הגוף.</p>
+        </div>
+        <div class="card-action">התחל ללמוד <i class="fa-solid fa-chevron-left"></i></div>
+      </button>
+
+      <!-- קטגוריה 6: מצבים חריגים -->
+      <button class="category-card" data-category="special-situations" id="catSpecial">
+        <div class="card-icon"><i class="fa-solid fa-kit-medical"></i></div>
+        <div class="card-body">
+          <h4 class="card-title">מצבים חריגים</h4>
+          <p class="card-desc">התמודדות בימי מחלה, בזמן טיסות, צומות או פעילות גופנית.</p>
+        </div>
+        <div class="card-action">התחל ללמוד <i class="fa-solid fa-chevron-left"></i></div>
+      </button>
+
+      <!-- קטגוריה 7: הדרכה בשפה הערבית -->
+      <button class="category-card cat-arabic" data-category="arabic-guide" id="catArabic">
+        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="card-body">
+          <h4 class="card-title">إرشادات الإنسولين بالعربية</h4>
+          <p class="card-desc">شرح كامل ومبسط عن حقن الإنسولين باللغة العربية.</p>
+        </div>
+        <div class="card-action">ابدأ التعلم <i class="fa-solid fa-chevron-left"></i></div>
+      </button>
+
+    </div>
+
+    <!-- אזור הלמידה האינטראקטיבי - Interactive Learning Dashboard (Hidden by default, shown when category clicked) -->
+    <section class="learning-dashboard hidden" id="learningDashboard">
+      
+      <!-- כותרת הקטגוריה שנבחרה - Active Category Header -->
+      <div class="dashboard-header">
+        <button id="btnBackToGrid" class="back-btn" aria-label="חזרה לרשימת הנושאים">
+          <i class="fa-solid fa-arrow-right"></i> חזרה לנושאים
+        </button>
+        <div class="active-category-info">
+          <h3 id="activeCategoryTitle">שם הקטגוריה</h3>
+          <p id="activeCategoryDesc">תיאור הקטגוריה</p>
+        </div>
+      </div>
+
+      <!-- ניווט כרטיסיות / טאבים - Tabs Navigation -->
+      <div class="dashboard-tabs" role="tablist" aria-label="אפשרויות הדרכה">
+        <button class="tab-btn active" id="tabInfographic" role="tab" aria-selected="true" aria-controls="panelInfographic">
+          <i class="fa-solid fa-chart-column"></i>
+          <span>אינפוגרפיקה</span>
+        </button>
+        <button class="tab-btn" id="tabPodcast" role="tab" aria-selected="false" aria-controls="panelPodcast">
+          <i class="fa-solid fa-headphones"></i>
+          <span>פודקאסט</span>
+        </button>
+        <button class="tab-btn" id="tabGame" role="tab" aria-selected="false" aria-controls="panelGame">
+          <i class="fa-solid fa-gamepad"></i>
+          <span>משחק הדגמה</span>
+        </button>
+        <button class="tab-btn" id="tabPresentation" role="tab" aria-selected="false" aria-controls="panelPresentation">
+          <i class="fa-solid fa-person-chalkboard"></i>
+          <span>מצגת הדרכה</span>
+        </button>
+      </div>
+
+      <!-- פאנלים של תוכן - Content Panels -->
+      <div class="tabs-content">
+
+        <!-- פאנל 1: אינפוגרפיקה - Infographics Panel -->
+        <div class="tab-panel active" id="panelInfographic" role="tabpanel" aria-labelledby="tabInfographic">
+          <div class="infographic-container" id="infographicContent">
+            <!-- Dynamic Infographic generated by app.js -->
+          </div>
+        </div>
+
+        <!-- פאנל 2: פודקאסט - Podcast Player Panel -->
+        <div class="tab-panel" id="panelPodcast" role="tabpanel" aria-labelledby="tabPodcast">
+          <div class="podcast-player-card">
+            <div class="podcast-header">
+              <div class="podcast-cover">
+                <i class="fa-solid fa-microphone-lines"></i>
+              </div>
+              <div class="podcast-title-info">
+                <h4 id="podcastTitle">שם הפרק</h4>
+                <p id="podcastSubtitle">הדרכת שמע רפואית</p>
+              </div>
+            </div>
+            
+            <!-- ויזואליזציה של גלי קול - Audio Wave Visualizer -->
+            <div class="audio-wave-container" id="audioWave">
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+            </div>
+
+            <!-- בקרים של הנגן - Controls -->
+            <div class="podcast-controls">
+              <!-- מהירות שמע (למבוגרים) - Speed Controller -->
+              <div class="speed-control">
+                <label for="selectSpeed"><i class="fa-solid fa-gauge-high"></i> מהירות שמע:</label>
+                <select id="selectSpeed" aria-label="בחר מהירות שמיעה">
+                  <option value="0.75">0.75x (איטי - מומלץ)</option>
+                  <option value="1.0" selected>1.0x (רגיל)</option>
+                  <option value="1.25">1.25x (מהיר)</option>
+                  <option value="1.5">1.5x (מהיר מאוד)</option>
+                </select>
+              </div>
+
+              <!-- כפתורי שמע - Audio Buttons -->
+              <div class="audio-buttons">
+                <button id="btnSkipBack" class="player-btn" aria-label="10 שניות אחורה">
+                  <i class="fa-solid fa-arrow-rotate-left"></i> 10ש'
+                </button>
+                <button id="btnPlayPause" class="player-btn btn-play" aria-label="נגן שמע">
+                  <i class="fa-solid fa-play"></i> נגן
+                </button>
+                <button id="btnSkipForward" class="player-btn" aria-label="10 שניות קדימה">
+                  10ש' <i class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+              </div>
+
+              <!-- מד התקדמות - Progress Bar -->
+              <div class="audio-progress-container">
+                <span class="time-display" id="timeCurrent">00:00</span>
+                <input type="range" id="audioProgress" class="progress-bar" value="0" min="0" max="100" aria-label="התקדמות השמע">
+                <span class="time-display" id="timeDuration">02:30</span>
+              </div>
+            </div>
+
+            <!-- תמלול מלא של הפודקאסט - Transcript -->
+            <div class="podcast-transcript-section">
+              <h5 class="transcript-title"><i class="fa-solid fa-file-lines"></i> תמלול ההקלטה (קריאה מלאה):</h5>
+              <div class="transcript-box" id="podcastTranscript">
+                <!-- Dynamic text populated by app.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- פאנל 3: משחק הדגמה - Interactive Simulation Panel -->
+        <div class="tab-panel" id="panelGame" role="tabpanel" aria-labelledby="tabGame">
+          <div class="game-simulation-card" id="gameSimulationContent">
+            <!-- Dynamic simulator interface generated by app.js -->
+          </div>
+        </div>
+
+        <!-- פאנל 4: מצגת - Slideshow Carousel Panel -->
+        <div class="tab-panel" id="panelPresentation" role="tabpanel" aria-labelledby="tabPresentation">
+          <div class="presentation-carousel-card">
+            
+            <!-- אזור התצוגה של השקופית - Slide Viewport -->
+            <div class="slide-viewport">
+              <div class="slide-container" id="activeSlideContent">
+                <!-- Dynamic Slide Content generated by app.js -->
+              </div>
+            </div>
+
+            <!-- בקרי מצגת - Carousel Controls -->
+            <div class="presentation-controls">
+              <button id="btnPrevSlide" class="carousel-btn" aria-label="הקודם">
+                <i class="fa-solid fa-chevron-right"></i> הקודם
+              </button>
+              
+              <div class="slide-indicators-group">
+                <span class="slide-counter" id="slideCounterDisplay">שקופית 1 מתוך 4</span>
+                <div class="slide-dots" id="slideDotsContainer">
+                  <!-- Dynamic dots generated by app.js -->
+                </div>
+              </div>
+
+              <button id="btnNextSlide" class="carousel-btn" aria-label="הבא">
+                הבא <i class="fa-solid fa-chevron-left"></i>
+              </button>
+            </div>
+            
+            <!-- מצב הפעלה אוטומטית - Autoplay Accessibility -->
+            <div class="autoplay-control">
+              <button id="btnAutoplayToggle" class="acc-btn" aria-label="הפעל מעבר שקופיות אוטומטי">
+                <i class="fa-solid fa-play"></i> הפעל מעבר אוטומטי
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- כותרת תחתונה - Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-disclaimer">
+        <p><strong>הבהרה חשובה:</strong> האתר פותח למטרות הדרכה ואינפורמציה עבור מטופלים ובני משפחותיהם. הטיפול בסוכרת ובאינסולין מותאם באופן אישי לכל מטופל על ידי הצוות הרפואי. אין לבצע שינויים במינוני האינסולין או בתוכנית הטיפול ללא ייעוץ רפואי ישיר.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 מרכז הדרכת אינסולין דיגיטלי. כל הזכויות שמורות.</p>
+        <div class="footer-links">
+          <a href="#" aria-label="הצהרת נגישות">הצהרת נגישות</a> | 
+          <a href="#" aria-label="תנאי שימוש">תנאי שימוש</a> | 
+          <a href="#" aria-label="צור קשר">צור קשר</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1517,7 +1517,9 @@ const DOM = {
   txtCopyright: document.getElementById('txtCopyright'),
   linkAccessibility: document.getElementById('linkAccessibility'),
   linkTerms: document.getElementById('linkTerms'),
-  linkContact: document.getElementById('linkContact')
+  linkContact: document.getElementById('linkContact'),
+  tabBtns: document.querySelectorAll('.tab-btn'),
+  tabPanels: document.querySelectorAll('.tab-panel')
 };
 
 // --- Initialization ---

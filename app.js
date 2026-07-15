@@ -188,6 +188,8 @@ const CONTENT_DATABASE = {
     icon: "fa-solid fa-dna",
     he: {
       title: "מה זה אינסולין?",
+      pdfUrl: "חומרים/מה זה אינסולין/מצגת מהו אינסולין.pdf",
+      pdfTitle: "מצגת מהו אינסולין",
       desc: "הסבר פשוט על תפקיד ההורמון בגוף ומדוע הוא חיוני.",
       infographic: `
         <div class="infographic-container">
@@ -368,6 +370,8 @@ const CONTENT_DATABASE = {
     icon: "fa-solid fa-syringe",
     he: {
       title: "הזרקת אינסולין",
+      pdfUrl: "חומרים/הזרקת אינסולין/מצגת הזרקת אינסולין נכונה.pdf",
+      pdfTitle: "מצגת הזרקת אינסולין נכונה",
       desc: "טכניקת הזרקה נכונה, סבב מקומות הזרקה ותפעול העט.",
       infographic: `
         <div class="infographic-container">
@@ -583,6 +587,7 @@ const CONTENT_DATABASE = {
     icon: "fa-solid fa-arrow-trend-up",
     he: {
       title: "היפרגליקמיה (סוכר גבוה)",
+      infographicImages: ["חומרים/היפרגליקמיה/טיפול בהיפרגליקמיה.png"],
       desc: "רמות סוכר גבוהות: איך מזהים, מהן הסכנות וכיצד מטפלים.",
       infographic: `
         <div class="infographic-container">
@@ -783,6 +788,7 @@ const CONTENT_DATABASE = {
     icon: "fa-solid fa-arrow-trend-down",
     he: {
       title: "היפוגליקמיה (סוכר נמוך)",
+      infographicImages: ["חומרים/היפוגליקמיה/טיפול בהיפוגליקמיה.png"],
       desc: "רמות סוכר נמוכות: סימני אזהרה וכיצד פועלים לפי חוק 15-15.",
       infographic: `
         <div class="infographic-container">
@@ -819,6 +825,7 @@ const CONTENT_DATABASE = {
       `,
       podcast: {
         title: "פרק 4: סוכר נמוך בדם - מצב חירום היפוגליקמיה",
+        videoUrl: "חומרים/היפוגליקמיה/פודקסט היפוגליקמיה.mp4",
         duration: "03:05",
         durationSeconds: 185,
         transcript: `ברוכים הבאים לפרק הרביעי. היום נלמד על המצב המלחיץ ביותר בטיפול באינסולין - נפילת סוכר, או בשמה הרפואי: היפוגליקמיה.
@@ -1158,6 +1165,9 @@ const CONTENT_DATABASE = {
     icon: "fa-solid fa-kit-medical",
     he: {
       title: "מצבים חריגים",
+      infographicImages: ["חומרים/מצבים חריגים/מדריך_לצום_בטוח_בסוכרת_1.png", "חומרים/מצבים חריגים/ניהול סוכרת סוג 1 בימי מחלה.jpeg"],
+      pdfUrl: "חומרים/מצבים חריגים/מצגת צום בטוח בתשעה באב.pdf",
+      pdfTitle: "מצגת צום בטוח בתשעה באב",
       desc: "התמודדות בימי מחלה, בזמן טיסות, צומות או פעילות גופנית.",
       infographic: `
         <div class="infographic-container">
@@ -1346,6 +1356,114 @@ const CONTENT_DATABASE = {
       ]
     },
     gameType: "special-situations-game"
+  },
+  "insulin-pump": {
+    icon: "fa-solid fa-pump-medical",
+    he: {
+      title: "טיפול במשאבת אינסולין",
+      desc: "כיצד פועלת משאבת האינסולין, יתרונות, שימוש נכון ופתרון תקלות.",
+      infographicImages: ["חומרים/טיפול במשאבת אינסולין/אינפוגרפיקה מנצחים_את_הסוכר_עם_המשאבה.png"],
+      infographic: `
+        <div class="infographic-container">
+          <div class="info-hero-box" style="background-color: #f0fdf4; border-right-color: #10b981; color: #065f46;">
+            <i class="fa-solid fa-pump-medical"></i>
+            משאבת אינסולין היא מכשיר דיגיטלי לביש המזליף אינסולין מהיר-טווח ברציפות ומדמה פעולת לבלב בריא.
+          </div>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-card-header" style="color: #0d9488;"><i class="fa-solid fa-clock"></i> קצב בזאלי ומינון בולוס</div>
+              <p>המשאבה פועלת בשני מצבים עיקריים:</p>
+              <ul>
+                <li><strong>מינון בזאלי (רקע):</strong> זילוף קבוע ומתמשך של טיפות אינסולין זעירות לאורך כל היממה, המותאם אישית לפי שעות.</li>
+                <li><strong>מינון בולוס (ארוחה/תיקון):</strong> מנה מרוכזת הניתנת באופן יזום לפני האוכל או לתיקון סוכר גבוה.</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-card-header" style="color: #0d9488;"><i class="fa-solid fa-heart-circle-check"></i> יתרונות הטיפול במשאבה</div>
+              <p>למה מטופלים רבים בוחרים לעבור למשאבה?</p>
+              <ul>
+                <li>דיוק רב ביותר במינוני האינסולין (עד מאיות היחידה).</li>
+                <li>שיפור דרמטי באיזון הסוכר והפחתת היפוגליקמיה בלילה.</li>
+                <li>הפחתה משמעותית בדקירות - החלפת עירוי פעם ב-3 ימים במקום זריקות יומיומיות.</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-card-header" style="color: #0d9488;"><i class="fa-solid fa-shield-halved"></i> בטיחות ומניעת סיבוכים</div>
+              <p>מכיוון שהמשאבה משתמשת רק באינסולין מהיר, הגוף אינו מחזיק מאגר אינסולין ארוך-טווח. לכן:</p>
+              <ul>
+                <li>חסימה בצינורית או תזוזה של המחט עלולות להוביל לעליית סוכר מהירה וסכנת חמצת (DKA) תוך שעות בודדות!</li>
+                <li>חובה להחזיק תמיד עטי אינסולין וציוד גיבוי לחירום.</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-card-header" style="color: #0d9488;"><i class="fa-solid fa-wrench"></i> תחזוקה יומיומית</div>
+              <p>שימוש נכון כולל:</p>
+              <ul>
+                <li>החלפת העירוי והמכל מדי 3 ימים.</li>
+                <li>מעקב סוכר רציף (סנסור) המסתנכרן לעיתים עם המשאבה.</li>
+                <li>שמירה על סביבת הזרקה נקייה ומחוטאת למניעת זיהומים.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      `,
+      podcast: {
+        title: "פרק 7: משאבת אינסולין - הטיפול החכם והרציף",
+        duration: "02:45",
+        durationSeconds: 165,
+        transcript: `שלום לכם וברוכים הבאים לפרק המוקדש לטיפול במשאבת אינסולין.
+משאבת אינסולין היא מכשיר אלקטרוני קטן, בגודל של טלפון נייד קטן או ביפר, המזרים אינסולין לגוף באופן רציף לאורך כל היממה, ובכך מדמה בצורה הטובה ביותר את פעולת הלבלב הבריא.
+
+בניגוד לזריקות אינסולין ידניות שבהן אנו מזריקים אינסולין ארוך טווח פעם ביום ואינסולין מהיר לפני הארוחות, המשאבה משתמשת רק באינסולין מהיר-טווח.
+היא מזליפה מינון נמוך וקבוע של אינסולין בכל שעות היממה (זה נקרא המינון הבזאלי), וכאשר אנו אוכלים, אנו מנחים את המשאבה לתת מנה מרוכזת של אינסולין (הנקראת בולוס) בלחיצת כפתור אחת.
+
+היתרונות הגדולים של המשאבה הם דיוק מרבי במינונים, הפחתה משמעותית בכמות הדקירות (מכיוון שמחליפים את הצינורית והמחט רק פעם ב-3 ימים), וגמישות רבה באורח החיים ובזמני הארוחות.
+
+עם זאת, המשאבה דורשת ניטור רמות סוכר קפדני והבנה של תפעול המכשיר. בפרק זה נכיר את חלקי המשאבה ונבין כיצד היא משפרת את איכות החיים של חולי סוכרת סוג 1 וסוג 2. תודה שהאזנתם!`
+      },
+      presentation: [
+        {
+          title: "מהי משאבת אינסולין?",
+          text: "מכשיר דיגיטלי מתקדם המזליף אינסולין מהיר בצורה קבועה ומדויקת.",
+          bullets: [
+            "מחליף את עטי האינסולין והזריקות המרובות.",
+            "מדמה לבלב אנושי על ידי מתן אינסולין רציף.",
+            "מתחבר לגוף באמצעות עירוי קטן (קנולה) המוחלף כל 3 ימים."
+          ],
+          graphic: "📱 מכשיר חכם לניהול הסוכרת"
+        },
+        {
+          title: "אינסולין בזאלי ובולוס במשאבה",
+          text: "המשאבה עושה שימוש באינסולין מהיר-טווח בלבד לשני התפקידים:",
+          bullets: [
+            "קצב בזאלי: טיפות קטנות של אינסולין המוזרקות באופן קבוע כל כמה דקות כדי לשמור על רמות סוכר יציבות בין הארוחות ובשינה.",
+            "בולוס ארוחה: מנת אינסולין הניתנת בלחיצת כפתור לפני הארוחה כדי לכסות את הפחמימות במזון."
+          ],
+          graphic: "📊 התאמה מדויקת לצורכי הגוף"
+        },
+        {
+          title: "יתרונות הטיפול במשאבה",
+          text: "מעבר למשאבה משפר משמעותית את איזון הסוכר ואת הנוחות היומיומית.",
+          bullets: [
+            "פחות דקירות: דקירה אחת לשלושה ימים במקום 4-5 זריקות ביום.",
+            "גמישות בארוחות: אין צורך להזריק במיוחד, פשוט מזינים במשאבה את כמות הפחמימות.",
+            "איזון טוב יותר: מפחית אירועי היפוגליקמיה בלילה בזכות מינון בזאלי משתנה."
+          ],
+          graphic: "✨ גמישות ואיכות חיים משופרת"
+        },
+        {
+          title: "דגשים בטיחותיים ופתרון תקלות",
+          text: "שימוש בטוח מחייב ערנות ותגובה מהירה לכל חריגה.",
+          bullets: [
+            "סכנת קטוצידוזיס מהירה: מכיוון שאין אינסולין ארוך-טווח בגוף, חסימה בצינורית המשאבה עלולה להוביל לעליית סוכר קיצונית תוך שעות בודדות.",
+            "בדיקת סוכר קבועה: חובה למדוד סוכר או להשתמש בחיישן רציף.",
+            "תוכנית גיבוי: תמיד החזיקו עטי אינסולין וציוד גיבוי לחירום במידה והמשאבה מתקלקלת."
+          ],
+          graphic: "⚠️ תוכנית גיבוי חיונית לכל משתמש"
+        }
+      ]
+    },
+    gameType: "insulin-pump-game"
   }
 };
 
@@ -1406,7 +1524,7 @@ function playSuccessSound() {
 
 // --- App State ---
 let appState = {
-  language: localStorage.getItem('language') || null, // null will force splash screen
+  language: localStorage.getItem('language') || null,
   fontScale: parseFloat(localStorage.getItem('fontScale')) || 1.0,
   highContrast: localStorage.getItem('highContrast') === 'true',
   activeCategory: null,
@@ -1420,7 +1538,6 @@ let appState = {
   autoplayInterval: null,
   isAutoplay: false,
   
-  // Game states
   injectionStep: 1,
   injectionDose: 0,
   injectionSiteSelected: null,
@@ -1436,7 +1553,22 @@ let appState = {
   
   mythsStep: 0,
   mythsScore: 0,
-  packedItems: []
+  mythsAnswers: [
+    { q: 'הזרקת אינסולין גורמת להתמכרות מיידית בגוף.', isMyth: true, explanation: 'מיתוס! אינסולין הוא הורמון טבעי שקיים בגוף. הזרקתו היא פשוט השלמת מחסור ואינה התמכרות.' },
+    { q: 'מחטי האינסולין המודרניות הן דקות וקצרות מאוד, ולכן ההזרקה כמעט אינה כואבת.', isMyth: false, explanation: 'עובדה! מחטי ההזרקה דקות כמעט כמו שערה (4-5 מ"מ) ומוזרקות לשכבת שומן דלת עצבים.' },
+    { q: 'אינסולין מיועד רק לשלב האחרון והסופי של מחלת הסוכרת.', isMyth: true, explanation: 'מיתוס! אינסולין מיועד לשמור על הגוף מפני נזקי סוכר גבוה. רופאים רבים ממליצים עליו בשלב מוקדם כדי להגן על הלבלב.' },
+    { q: 'אם אני לוקח אינסולין אני יכול לאכול פחמימות ומתוקים ללא הגבלה.', isMyth: true, explanation: 'מיתוס! תזונה בריאה חיונית תמיד לאיזון הסוכרת. האינסולין מסייע באיזון, אך אכילה לא מבוקרת תפגע בתוצאות הטיפול.' },
+    { q: 'אינסולין מוריד את רמות הסוכר ובכך שומר ומגן על הכליות והעיניים מפני נזקי הסוכרת.', isMyth: false, explanation: 'עובדה! מה שפוגע בעיניים ובכליות הוא הסוכר הגבוה. שמירה על סוכר מאוזן מונעת סיבוכים אלו.' }
+  ],
+  mythsAnswersAr: [
+    { q: 'حقن الإنسولين يسبب الإدمان الفوري للجسم ولا يمكن الاستغناء عنه.', isMyth: true, explanation: 'خرافة! الإنسولين هرمون طبيعي يفرزه الجسم، وحقنه هو ببساطة تعويض للنقص الحاصل وليس إدماناً.' },
+    { q: 'إبر الإنسولين الحديثة رفيعة وقصيرة جداً، لذا فإن الحقن لا يسبب الألم تقريباً.', isMyth: false, explanation: 'حقيقة! الإبر الحديثة رفيعة كالشعرة (4-5 ملم) وتُحقن في الطبقة الدهنية التي تفتقر للنهايات العصبية.' },
+    { q: 'الإنسولين مخصص فقط للمراحل الأخيرة والنهائية من مرض السكري.', isMyth: true, explanation: 'خرافة! يُستخدم الإنسولين لحماية الجسم من أضرار السكر المرتفع. ينصح الأطباء به مبكراً لإراحة البنكرياس.' },
+    { q: 'إذا كنت أستخدم الإنسولين، يمكنني تناول السكريات والنشويات دون قيود.', isMyth: true, explanation: 'خرافة! التغذية الصحية أساسية دائماً. يساعد الإنسولين في ضبط السكر، ولكن التناول غير المنظم سيضر بصحتك.' },
+    { q: 'الإنسولين يخفض مستويات السكر وبالتالي يحمي الكلى والعيون من مضاعفات السكري.', isMyth: false, explanation: 'حقيقة! السكر المرتفع هو الذي يضر بالعيون والكلى. الحفاظ على سكر متوازن يمنع هذه المضاعفات.' }
+  ],
+  packedItems: [],
+  presentationMode: 'text'
 };
 
 // --- DOM References ---
@@ -1483,6 +1615,13 @@ const DOM = {
   audioWave: document.getElementById('audioWave'),
   gameSimulationContent: document.getElementById('gameSimulationContent'),
   activeSlideContent: document.getElementById('activeSlideContent'),
+  infographicImagesContainer: document.getElementById('infographicImagesContainer'),
+  podcastVideoContainer: document.getElementById('podcastVideoContainer'),
+  podcastPlayerCard: document.getElementById('podcastPlayerCard'),
+  presentationPdfContainer: document.getElementById('presentationPdfContainer'),
+  presentationModeToggle: document.getElementById('presentationModeToggle'),
+  btnModeText: document.getElementById('btnModeText'),
+  btnModePdf: document.getElementById('btnModePdf'),
   
   btnPrevSlide: document.getElementById('btnPrevSlide'),
   btnNextSlide: document.getElementById('btnNextSlide'),
@@ -1519,21 +1658,126 @@ const DOM = {
   linkTerms: document.getElementById('linkTerms'),
   linkContact: document.getElementById('linkContact'),
   tabBtns: document.querySelectorAll('.tab-btn'),
-  tabPanels: document.querySelectorAll('.tab-panel')
+  tabPanels: document.querySelectorAll('.tab-panel'),
+  authOverlay: document.getElementById('authOverlay'),
+  inputPasscode: document.getElementById('inputPasscode'),
+  btnToggleShowPasscode: document.getElementById('btnToggleShowPasscode'),
+  authErrorMessage: document.getElementById('authErrorMessage'),
+  btnSubmitAuth: document.getElementById('btnSubmitAuth')
 };
 
 // --- Initialization ---
 function init() {
+  if (window.pdfjsLib) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = window.location.origin + '/pdf.worker.min.js';
+  }
   applyFontScale();
   applyHighContrast();
   setupEventListeners();
   
+  initPasscodeAuth();
+}
+
+function initPasscodeAuth() {
+  if (DOM.authOverlay) DOM.authOverlay.style.display = 'flex';
+  if (DOM.inputPasscode) DOM.inputPasscode.focus();
+  
+  if (DOM.inputPasscode) {
+    DOM.inputPasscode.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        validatePasscode();
+      }
+    });
+  }
+  
+  if (DOM.btnToggleShowPasscode) {
+    DOM.btnToggleShowPasscode.addEventListener('click', () => {
+      const type = DOM.inputPasscode.getAttribute('type') === 'password' ? 'text' : 'password';
+      DOM.inputPasscode.setAttribute('type', type);
+      const icon = DOM.btnToggleShowPasscode.querySelector('i');
+      if (type === 'password') {
+        icon.className = 'fa-solid fa-eye';
+      } else {
+        icon.className = 'fa-solid fa-eye-slash';
+      }
+    });
+  }
+  
+  if (DOM.btnSubmitAuth) {
+    DOM.btnSubmitAuth.addEventListener('click', validatePasscode);
+  }
+}
+
+function validatePasscode() {
+  const value = DOM.inputPasscode.value.trim();
+  if (value === '102030') {
+    sessionStorage.setItem('authenticated', 'true');
+    playAuthBeep(true);
+    
+    if (DOM.authOverlay) {
+      DOM.authOverlay.style.opacity = '0';
+      setTimeout(() => {
+        DOM.authOverlay.style.display = 'none';
+        proceedToLanguageSelection();
+      }, 500);
+    }
+  } else {
+    playAuthBeep(false);
+    
+    if (DOM.inputPasscode) DOM.inputPasscode.value = '';
+    if (DOM.authErrorMessage) DOM.authErrorMessage.classList.remove('hidden');
+    
+    const card = document.querySelector('.auth-card');
+    if (card) {
+      card.style.animation = 'none';
+      setTimeout(() => {
+        card.style.animation = 'shake 0.3s ease-in-out';
+      }, 10);
+    }
+    
+    if (DOM.inputPasscode) DOM.inputPasscode.focus();
+  }
+}
+
+function playAuthBeep(success) {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    
+    if (success) {
+      osc.frequency.setValueAtTime(600, ctx.currentTime);
+      gain.gain.setValueAtTime(0.08, ctx.currentTime);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.1);
+      
+      const osc2 = ctx.createOscillator();
+      const gain2 = ctx.createGain();
+      osc2.connect(gain2);
+      gain2.connect(ctx.destination);
+      osc2.frequency.setValueAtTime(800, ctx.currentTime + 0.12);
+      gain2.gain.setValueAtTime(0.08, ctx.currentTime + 0.12);
+      osc2.start(ctx.currentTime + 0.12);
+      osc2.stop(ctx.currentTime + 0.22);
+    } else {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(110, ctx.currentTime);
+      gain.gain.setValueAtTime(0.12, ctx.currentTime);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.25);
+    }
+  } catch (e) {
+    console.log("AudioContext blocked or unsupported", e);
+  }
+}
+
+function proceedToLanguageSelection() {
   if (appState.language) {
-    // Language is stored, skip splash
     DOM.languageSplash.classList.add('hidden');
     applyLanguage(appState.language);
   } else {
-    // Show splash screen, keep main dashboard hidden
     DOM.languageSplash.classList.remove('hidden');
   }
 }
@@ -1574,6 +1818,12 @@ function setupEventListeners() {
   DOM.btnPrevSlide.addEventListener('click', () => changeSlide(-1));
   DOM.btnNextSlide.addEventListener('click', () => changeSlide(1));
   DOM.btnAutoplayToggle.addEventListener('click', togglePresentationAutoplay);
+
+  // Presentation Mode Toggle
+  if (DOM.btnModeText && DOM.btnModePdf) {
+    DOM.btnModeText.addEventListener('click', () => switchPresentationMode('text'));
+    DOM.btnModePdf.addEventListener('click', () => switchPresentationMode('pdf'));
+  }
 }
 
 // --- Language Controller Functions ---
@@ -1659,6 +1909,7 @@ function renderCategoriesGrid(lang) {
   DOM.categoriesGrid.innerHTML = "";
   
   Object.keys(CONTENT_DATABASE).forEach(catId => {
+    if (!CONTENT_DATABASE[catId][lang]) return; // Skip if this category is not translated to this language
     const cardData = CONTENT_DATABASE[catId][lang];
     const icon = CONTENT_DATABASE[catId].icon;
     
@@ -1741,17 +1992,84 @@ function openCategory(catId) {
   // Infographic rendering
   DOM.infographicContent.innerHTML = data.infographic;
 
-  // Podcast setup
+  // Render Infographic Image Attachments
+  if (data.infographicImages && data.infographicImages.length > 0) {
+    let imagesHtml = `<h4 class="info-images-title"><i class="fa-solid fa-file-image"></i> מדריכים ואינפוגרפיקות להורדה:</h4>`;
+    imagesHtml += `<div class="info-images-grid">`;
+    data.infographicImages.forEach((imgUrl, index) => {
+      const filename = imgUrl.split('/').pop().replace(/\.[^/.]+$/, ""); // get name without ext
+      const cleanName = filename.replace(/_/g, ' ');
+      imagesHtml += `
+        <div class="info-image-card">
+          <img src="${imgUrl}" alt="${cleanName}" />
+          <div class="info-image-details">
+            <div class="info-image-caption">${cleanName}</div>
+            <div class="info-image-actions">
+              <a href="${imgUrl}" target="_blank" class="btn-view-image">
+                <i class="fa-solid fa-up-right-from-square"></i> פתח/הורד
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+    imagesHtml += `</div>`;
+    DOM.infographicImagesContainer.innerHTML = imagesHtml;
+    DOM.infographicImagesContainer.classList.remove('hidden');
+  } else {
+    DOM.infographicImagesContainer.innerHTML = "";
+    DOM.infographicImagesContainer.classList.add('hidden');
+  }
+
+  // Podcast setup (handle MP4 video file or mock player)
   DOM.podcastTitle.textContent = data.podcast.title;
   DOM.podcastTranscript.textContent = data.podcast.transcript;
-  appState.audioDuration = data.podcast.durationSeconds;
-  appState.audioCurrentTime = 0;
-  DOM.timeDuration.textContent = data.podcast.duration;
-  updatePodcastProgressUI();
+
+  if (data.podcast.videoUrl) {
+    // Show real video player, hide mock audio player
+    DOM.podcastVideoContainer.innerHTML = `
+      <video controls class="podcast-video">
+        <source src="${data.podcast.videoUrl}" type="video/mp4">
+        הדפדפן שלך אינו תומך בנגן וידאו.
+      </video>
+    `;
+    DOM.podcastVideoContainer.classList.remove('hidden');
+    DOM.podcastPlayerCard.classList.add('hidden');
+  } else {
+    // Show mock audio player, hide real video player
+    DOM.podcastVideoContainer.innerHTML = "";
+    DOM.podcastVideoContainer.classList.add('hidden');
+    DOM.podcastPlayerCard.classList.remove('hidden');
+    
+    appState.audioDuration = data.podcast.durationSeconds;
+    appState.audioCurrentTime = 0;
+    DOM.timeDuration.textContent = data.podcast.duration;
+    updatePodcastProgressUI();
+  }
 
   // Slide carousel setup
   appState.slideIndex = 0;
-  renderSlide();
+  loadCategoryPdf(data.pdfUrl);
+
+  // Render PDF Attachment inside Slide Carousel Container
+  if (data.pdfUrl) {
+    DOM.presentationPdfContainer.innerHTML = `
+      <div class="pdf-card">
+        <div class="pdf-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div class="pdf-info">
+          <h5>${data.pdfTitle || 'מצגת הדרכה רשמית'} (PDF)</h5>
+          <p>לצפייה, הורדה או הדפסה של המצגת המלאה</p>
+        </div>
+        <a href="${data.pdfUrl}" target="_blank" class="pdf-action-btn">
+          <i class="fa-solid fa-download"></i> פתח קובץ
+        </a>
+      </div>
+    `;
+    DOM.presentationPdfContainer.classList.remove('hidden');
+  } else {
+    DOM.presentationPdfContainer.innerHTML = "";
+    DOM.presentationPdfContainer.classList.add('hidden');
+  }
 
   // Interactive Game setup
   const gameType = CONTENT_DATABASE[catId].gameType;
@@ -1837,6 +2155,14 @@ function stopPodcast() {
   pausePodcast();
   appState.audioCurrentTime = 0;
   updatePodcastProgressUI();
+  
+  // Pause actual HTML5 video element if it exists and is playing
+  if (DOM.podcastVideoContainer) {
+    const video = DOM.podcastVideoContainer.querySelector('video');
+    if (video) {
+      video.pause();
+    }
+  }
 }
 
 function skipPodcastTime(seconds) {
@@ -1866,11 +2192,33 @@ function updatePodcastProgressUI() {
 }
 
 // --- Presentation Carousel Slider ---
+let currentPdfDoc = null;
+let pdfNumPages = 0;
+
 function renderSlide() {
   const lang = appState.language;
   const catData = CONTENT_DATABASE[appState.activeCategory][lang];
-  if (!catData || !catData.presentation) return;
+  if (!catData) return;
   
+  if (appState.presentationMode === 'pdf') {
+    if (currentPdfDoc) {
+      renderPdfSlide(lang);
+    } else {
+      DOM.activeSlideContent.innerHTML = `
+        <div class="pdf-slide-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; position: relative; min-height: 250px;">
+          <div id="pdfLoadingSpinner" class="pdf-loading-spinner" style="font-weight: 500; font-size: 1.1rem; color: var(--primary);">טוען מצגת PDF...</div>
+        </div>
+      `;
+      DOM.slideCounterDisplay.textContent = "...";
+      DOM.slideDotsContainer.innerHTML = "";
+    }
+  } else {
+    renderTextSlide(catData, lang);
+  }
+}
+
+function renderTextSlide(catData, lang) {
+  if (!catData.presentation) return;
   const slide = catData.presentation[appState.slideIndex];
   const totalSlides = catData.presentation.length;
 
@@ -1896,7 +2244,7 @@ function renderSlide() {
 
   DOM.slideCounterDisplay.textContent = lang === 'he'
     ? `שקופית ${appState.slideIndex + 1} מתוך ${totalSlides}`
-    : `شريحة ${appState.slideIndex + 1} من ${totalSlides}`;
+    : `שריחה ${appState.slideIndex + 1} מן ${totalSlides}`;
   
   DOM.slideDotsContainer.innerHTML = "";
   for (let i = 0; i < totalSlides; i++) {
@@ -1912,12 +2260,136 @@ function renderSlide() {
   }
 }
 
+function renderPdfSlide(lang) {
+  if (!currentPdfDoc) return;
+  
+  DOM.activeSlideContent.innerHTML = `
+    <div class="pdf-slide-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; position: relative; min-height: 250px;">
+      <div id="pdfLoadingSpinner" class="pdf-loading-spinner" style="font-weight: 500; font-size: 1.1rem; color: var(--primary);">טוען שקופית PDF...</div>
+      <canvas id="pdfSlideCanvas" class="pdf-canvas" style="display: none; max-width: 100%; max-height: 400px; box-shadow: var(--shadow-md); border-radius: 4px; border: 1px solid var(--border-color); background: white;"></canvas>
+    </div>
+  `;
+  
+  const canvas = document.getElementById('pdfSlideCanvas');
+  const spinner = document.getElementById('pdfLoadingSpinner');
+  const context = canvas.getContext('2d');
+  
+  currentPdfDoc.getPage(appState.slideIndex + 1).then(page => {
+    const viewport = page.getViewport({ scale: 1.5 });
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+    
+    const renderContext = {
+      canvasContext: context,
+      viewport: viewport
+    };
+    
+    page.render(renderContext).promise.then(() => {
+      if (spinner) spinner.style.display = 'none';
+      if (canvas) canvas.style.display = 'block';
+    });
+  }).catch(err => {
+    console.error("Error rendering PDF page: ", err);
+    if (spinner) spinner.textContent = "שגיאה בטעינת השקופית";
+  });
+
+  DOM.slideCounterDisplay.textContent = lang === 'he'
+    ? `שקופית ${appState.slideIndex + 1} מתוך ${pdfNumPages}`
+    : `שריחה ${appState.slideIndex + 1} מן ${pdfNumPages}`;
+  
+  DOM.slideDotsContainer.innerHTML = "";
+  for (let i = 0; i < pdfNumPages; i++) {
+    const dot = document.createElement('button');
+    dot.className = `slide-dot ${i === appState.slideIndex ? 'active' : ''}`;
+    dot.setAttribute('aria-label', `Slide ${i + 1}`);
+    dot.addEventListener('click', () => {
+      appState.slideIndex = i;
+      renderSlide();
+      playClickSound();
+    });
+    DOM.slideDotsContainer.appendChild(dot);
+  }
+}
+
+function switchPresentationMode(mode) {
+  appState.presentationMode = mode;
+  appState.slideIndex = 0;
+  
+  if (DOM.btnModeText && DOM.btnModePdf) {
+    DOM.btnModeText.classList.toggle('active', mode === 'text');
+    DOM.btnModePdf.classList.toggle('active', mode === 'pdf');
+  }
+  
+  renderSlide();
+  playClickSound();
+}
+
+function loadCategoryPdf(pdfUrl) {
+  currentPdfDoc = null;
+  pdfNumPages = 0;
+  appState.slideIndex = 0;
+  
+  if (!pdfUrl) {
+    appState.presentationMode = 'text';
+    renderSlide();
+    return;
+  }
+  
+  appState.presentationMode = 'pdf';
+  renderSlide();
+  
+  if (window.location.protocol === 'file:') {
+    console.error("Local file protocol detected. PDF.js will not load due to browser CORS policies.");
+    DOM.activeSlideContent.innerHTML = `
+      <div style="color: #b91c1c; padding: 1.5rem; background: #fee2e2; border: 1px solid #fca5a5; border-radius: 8px; direction: rtl; text-align: right; font-family: 'Heebo', sans-serif;">
+        <h5 style="margin-top: 0; font-weight: 700; font-size: 1.1rem; color: #991b1b;"><i class="fa-solid fa-triangle-exclamation"></i> שגיאת אבטחה של הדפדפן (פרוטוקול קובץ מקומי)</h5>
+        <p style="margin: 0.5rem 0; font-size: 0.95rem; color: #7f1d1d;">
+          נראה שפתחת את קובץ האתר ישירות מהמחשב (פרוטוקול <code>file://</code>). 
+          מטעמי אבטחה, דפדפנים חוסמים טעינה של מצגות PDF באופן זה.
+        </p>
+        <p style="margin: 0.5rem 0 0 0; font-weight: bold; font-size: 0.95rem; color: #7f1d1d;">
+          פתרון: אנא פתח את הדפדפן בכתובת המקומית שהפעלנו עבורך: <a href="http://localhost:8080" target="_blank" style="text-decoration: underline; color: #b91c1c;">http://localhost:8080</a>
+        </p>
+      </div>
+    `;
+    return;
+  }
+  
+  try {
+    if (!window.pdfjsLib) {
+      throw new Error("window.pdfjsLib is undefined! PDF.js library failed to load.");
+    }
+    
+    const encodedUrl = encodeURI(pdfUrl);
+    pdfjsLib.getDocument(encodedUrl).promise.then(pdf => {
+      currentPdfDoc = pdf;
+      pdfNumPages = pdf.numPages;
+      renderSlide();
+    }).catch(err => {
+      console.error("Error inside PDF promise: ", err);
+      DOM.activeSlideContent.innerHTML = `<div style="color: red; padding: 1rem; direction: ltr; text-align: left;">Error inside PDF promise: ${err.toString()}</div>`;
+    });
+  } catch (err) {
+    console.error("Synchronous error loading PDF: ", err);
+    DOM.activeSlideContent.innerHTML = `<div style="color: red; padding: 1rem; direction: ltr; text-align: left;">Synchronous error: ${err.toString()}</div>`;
+  }
+}
+
 function changeSlide(direction) {
   const lang = appState.language;
   const catData = CONTENT_DATABASE[appState.activeCategory][lang];
-  if (!catData || !catData.presentation) return;
+  if (!catData) return;
   
-  const totalSlides = catData.presentation.length;
+  let totalSlides = 0;
+  if (appState.presentationMode === 'pdf' && currentPdfDoc) {
+    totalSlides = pdfNumPages;
+  } else {
+    if (!catData.presentation) return;
+    totalSlides = catData.presentation.length;
+  }
+  
+  if (totalSlides === 0) return;
+  
   // Account for RTL layouts
   appState.slideIndex = (appState.slideIndex + direction + totalSlides) % totalSlides;
   renderSlide();
@@ -1978,6 +2450,18 @@ function resetGameStates(gameType) {
   appState.mythsStep = 0;
   appState.mythsScore = 0;
   appState.packedItems = [];
+  
+  // Pump States
+  appState.pumpStep = 1;
+  appState.pumpCarbs = 45;
+  appState.pumpSugar = 180;
+  appState.pumpBolusDelivered = 0;
+  appState.pumpDelivering = false;
+  appState.pumpDeliveryProgress = 0;
+  if (appState.pumpTimer) {
+    clearInterval(appState.pumpTimer);
+    appState.pumpTimer = null;
+  }
 }
 
 function renderGameSimulation() {
@@ -2004,6 +2488,9 @@ function renderGameSimulation() {
       break;
     case 'special-situations-game':
       renderSpecialSituationsGame(isAr);
+      break;
+    case 'insulin-pump-game':
+      renderPumpGame();
       break;
     default:
       DOM.gameSimulationContent.innerHTML = `<p>Game is loading / اللعبة قيد التحميل</p>`;
@@ -2962,6 +3449,382 @@ function renderSpecialSituationsGame(isAr) {
   });
 }
 
+
+// --- Game 7: Insulin Pump Simulator ---
+function renderPumpGame() {
+  const step = appState.pumpStep;
+  const totalSteps = 3;
+  const stepTitlesHe = [
+    "הזנת פחמימות ורמת סוכר",
+    "אישור וחישוב מינון",
+    "הזלפת אינסולין וסיום"
+  ];
+  const stepTitle = stepTitlesHe[step - 1];
+
+  // Indicator bubbles
+  let stepBubbles = `<div class="sim-step-indicator">`;
+  for (let i = 1; i <= totalSteps; i++) {
+    let stateClass = "";
+    if (i < step) stateClass = "complete";
+    else if (i === step) stateClass = "active";
+    stepBubbles += `<div class="step-bubble ${stateClass}">${i}</div>`;
+  }
+  stepBubbles += `</div>`;
+
+  let visualContent = "";
+  let actionsContent = "";
+
+  if (step === 1) {
+    visualContent = `
+      <div class="pump-device">
+        <div class="pump-screen">
+          <div class="pump-header">
+            <span class="pump-title">מחשבון בולוס</span>
+            <div class="pump-header-icons">
+              <i class="fa-solid fa-battery-three-quarters"></i>
+              <i class="fa-solid fa-signal"></i>
+            </div>
+          </div>
+          <div class="pump-body">
+            <div style="font-size: 0.95rem; margin-bottom: 0.5rem; font-weight: 500;">התאימו את נתוני המטופל הנוכחיים:</div>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+              <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.05); padding: 0.4rem 0.75rem; border-radius: 8px;">
+                <span>פחמימות בארוחה:</span>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <button class="acc-btn" id="btnPumpCarbDec" style="padding: 0.1rem 0.5rem; font-weight: bold; border-radius: 4px;">-</button>
+                  <strong style="color: #f0abfc; font-size: 1.1rem; min-width: 40px; text-align: center;" id="valPumpCarbs">${appState.pumpCarbs} גר'</strong>
+                  <button class="acc-btn" id="btnPumpCarbInc" style="padding: 0.1rem 0.5rem; font-weight: bold; border-radius: 4px;">+</button>
+                </div>
+              </div>
+              
+              <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.05); padding: 0.4rem 0.75rem; border-radius: 8px;">
+                <span>סוכר נוכחי בדם:</span>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <button class="acc-btn" id="btnPumpSugarDec" style="padding: 0.1rem 0.5rem; font-weight: bold; border-radius: 4px;">-</button>
+                  <strong style="color: #38bdf8; font-size: 1.1rem; min-width: 40px; text-align: center;" id="valPumpSugar">${appState.pumpSugar} מ"ג</strong>
+                  <button class="acc-btn" id="btnPumpSugarInc" style="padding: 0.1rem 0.5rem; font-weight: bold; border-radius: 4px;">+</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="pump-formula">
+              יחס פחמימות: 1 יחידה ל-15 גרם פחמימה.<br>
+              רגישות (תיקון): 1 יחידה מורידה 40 מ"ג/ד"ל (מעל יעד 100).
+            </div>
+          </div>
+        </div>
+        
+        <div class="pump-buttons-panel">
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" id="btnHardwareUp"><i class="fa-solid fa-chevron-up"></i></button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" id="btnHardwareBack"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="pump-hardware-btn btn-action-ok" id="btnHardwareOk">OK</button>
+          <button class="pump-hardware-btn" id="btnHardwareDown"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+      </div>
+    `;
+    actionsContent = `
+      <button class="carousel-btn" id="btnPumpCalc" style="min-width: 220px; background-color: var(--primary);">
+        <i class="fa-solid fa-calculator"></i> חשב מינון בולוס
+      </button>
+    `;
+  }
+  else if (step === 2) {
+    const carbDose = (appState.pumpCarbs / 15).toFixed(1);
+    const sugarDiff = Math.max(appState.pumpSugar - 100, 0);
+    const correctionDose = (sugarDiff / 40).toFixed(1);
+    const totalDose = (parseFloat(carbDose) + parseFloat(correctionDose)).toFixed(1);
+    appState.pumpTotalDose = parseFloat(totalDose);
+
+    visualContent = `
+      <div class="pump-device">
+        <div class="pump-screen">
+          <div class="pump-header">
+            <span class="pump-title">אישור בולוס</span>
+            <div class="pump-header-icons">
+              <i class="fa-solid fa-battery-three-quarters"></i>
+              <i class="fa-solid fa-signal"></i>
+            </div>
+          </div>
+          <div class="pump-body" style="align-items: stretch; text-align: right; gap: 0.4rem;">
+            <div style="font-size: 0.95rem; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.2rem; color: #f0abfc;">סיכום המלצת המשאבה:</div>
+            
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+              <span>בולוס פחמימות (${appState.pumpCarbs} גר'):</span>
+              <strong>${carbDose} יח'</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+              <span>בולוס תיקון (סוכר ${appState.pumpSugar}):</span>
+              <strong>${correctionDose} יח'</strong>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; font-size: 1.1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.3rem; margin-top: 0.2rem; color: #818cf8; font-weight: 700;">
+              <span>סה"כ מנת בולוס:</span>
+              <span style="color: #38bdf8; font-size: 1.25rem;">${totalDose} יחידות</span>
+            </div>
+            
+            <div class="pump-formula" style="font-size: 0.75rem; color: #94a3b8; text-align: center;">
+              נוסחה: (${appState.pumpCarbs}/15) + ((${appState.pumpSugar}-100)/40) = ${totalDose} יח'
+            </div>
+          </div>
+        </div>
+        
+        <div class="pump-buttons-panel">
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" id="btnHardwareBack"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="pump-hardware-btn btn-action-ok" id="btnHardwareOk">אשר</button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+        </div>
+      </div>
+    `;
+    actionsContent = `
+      <div style="display: flex; gap: 0.75rem;">
+        <button class="carousel-btn" id="btnPumpBack" style="background-color: var(--border-color); color: var(--text-color); min-width: 100px;">
+          ערוך
+        </button>
+        <button class="carousel-btn" id="btnPumpDeliver" style="min-width: 150px; background-color: var(--success);">
+          <i class="fa-solid fa-circle-check"></i> הזרק ${totalDose} יח'
+        </button>
+      </div>
+    `;
+  }
+  else if (step === 3) {
+    const isDelivering = appState.pumpDelivering;
+    const progress = appState.pumpDeliveryProgress;
+    const delivered = appState.pumpBolusDelivered;
+    const total = appState.pumpTotalDose;
+
+    let centerContent = "";
+    if (isDelivering) {
+      centerContent = `
+        <div class="pump-status-label">מזליף מנת בולוס...</div>
+        <div class="pump-status-value">${delivered.toFixed(1)} / ${total.toFixed(1)} יח'</div>
+        <div class="pump-anim-drops">
+          <span class="pump-drop active-drop"></span>
+          <span class="pump-drop active-drop" style="animation-delay: 0.3s;"></span>
+          <span class="pump-drop active-drop" style="animation-delay: 0.6s;"></span>
+        </div>
+        <div class="pump-progress-bar-container">
+          <div class="pump-progress-bar-fill" style="width: ${progress}%;"></div>
+        </div>
+      `;
+    } else {
+      centerContent = `
+        <div style="color: var(--success); font-size: 2.5rem; margin-bottom: 0.5rem;">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="pump-status-label" style="font-weight: 700; color: #34d399; font-size: 1.1rem;">הזרקת הבולוס הושלמה!</div>
+        <div style="font-size: 0.9rem; color: #cbd5e1; margin-top: 0.25rem;">
+          הוזרקו ${total.toFixed(1)} יחידות אינסולין מהיר.<br>
+          הסוכר בדם צפוי לרדת בהדרגה.
+        </div>
+      `;
+    }
+
+    visualContent = `
+      <div class="pump-device">
+        <div class="pump-screen">
+          <div class="pump-header">
+            <span class="pump-title">מצב הזלפה</span>
+            <div class="pump-header-icons">
+              <i class="fa-solid fa-battery-three-quarters"></i>
+              <i class="fa-solid fa-signal"></i>
+            </div>
+          </div>
+          <div class="pump-body">
+            ${centerContent}
+          </div>
+        </div>
+        
+        <div class="pump-buttons-panel" style="opacity: 0.5; pointer-events: none;">
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+          <button class="pump-hardware-btn btn-action-ok">OK</button>
+          <button class="pump-hardware-btn" style="visibility: hidden;"></button>
+        </div>
+      </div>
+    `;
+
+    actionsContent = `
+      <button class="carousel-btn" id="btnPumpReset" ${isDelivering ? 'disabled style="background-color: var(--border-color); opacity: 0.5;"' : 'style="min-width: 220px; background-color: var(--success);"'}>
+        <i class="fa-solid fa-rotate-left"></i> הפעל סימולטור מחדש
+      </button>
+    `;
+  }
+
+  DOM.gameSimulationContent.innerHTML = `
+    <div class="simulator-layout" style="text-align: right;">
+      <h4 style="font-weight: 900; font-size: calc(1.4rem * var(--font-scale)); color: var(--primary);">
+        סימולטור משאבת אינסולין - ${stepTitle}
+      </h4>
+      ${stepBubbles}
+      <div class="sim-visual-box" style="display: flex; justify-content: center; margin-top: 1rem;">
+        ${visualContent}
+      </div>
+      <div class="sim-controls" style="justify-content: center; margin-top: 1.5rem;">
+        ${actionsContent}
+      </div>
+    </div>
+  `;
+
+  // --- Bind Event Listeners ---
+  if (step === 1) {
+    const calcBtn = document.getElementById('btnPumpCalc');
+    const okBtn = document.getElementById('btnHardwareOk');
+    const backBtn = document.getElementById('btnHardwareBack');
+
+    // Controls
+    const carbDec = document.getElementById('btnPumpCarbDec');
+    const carbInc = document.getElementById('btnPumpCarbInc');
+    const sugarDec = document.getElementById('btnPumpSugarDec');
+    const sugarInc = document.getElementById('btnPumpSugarInc');
+
+    const updateInputs = () => {
+      document.getElementById('valPumpCarbs').textContent = appState.pumpCarbs + " גר'";
+      document.getElementById('valPumpSugar').textContent = appState.pumpSugar + " מ\"ג";
+    };
+
+    carbDec.addEventListener('click', () => {
+      if (appState.pumpCarbs >= 5) {
+        appState.pumpCarbs -= 5;
+        updateInputs();
+        playClickSound();
+      }
+    });
+    carbInc.addEventListener('click', () => {
+      if (appState.pumpCarbs <= 145) {
+        appState.pumpCarbs += 5;
+        updateInputs();
+        playClickSound();
+      }
+    });
+
+    sugarDec.addEventListener('click', () => {
+      if (appState.pumpSugar >= 60) {
+        appState.pumpSugar -= 10;
+        updateInputs();
+        playClickSound();
+      }
+    });
+    sugarInc.addEventListener('click', () => {
+      if (appState.pumpSugar <= 290) {
+        appState.pumpSugar += 10;
+        updateInputs();
+        playClickSound();
+      }
+    });
+
+    // Hardware buttons bindings for cool micro-interactions
+    document.getElementById('btnHardwareUp').addEventListener('click', () => {
+      if (appState.pumpSugar <= 290) {
+        appState.pumpSugar += 10;
+        updateInputs();
+        playClickSound();
+      }
+    });
+    document.getElementById('btnHardwareDown').addEventListener('click', () => {
+      if (appState.pumpSugar >= 60) {
+        appState.pumpSugar -= 10;
+        updateInputs();
+        playClickSound();
+      }
+    });
+
+    const triggerCalculate = () => {
+      appState.pumpStep = 2;
+      playSuccessSound();
+      renderPumpGame();
+    };
+
+    calcBtn.addEventListener('click', triggerCalculate);
+    okBtn.addEventListener('click', triggerCalculate);
+    
+    backBtn.addEventListener('click', () => {
+      playClickSound();
+      closeCategoryDashboard();
+    });
+  } 
+  else if (step === 2) {
+    const editBtn = document.getElementById('btnPumpBack');
+    const deliverBtn = document.getElementById('btnPumpDeliver');
+    const okBtn = document.getElementById('btnHardwareOk');
+    const backBtn = document.getElementById('btnHardwareBack');
+
+    const triggerEdit = () => {
+      appState.pumpStep = 1;
+      playClickSound();
+      renderPumpGame();
+    };
+
+    const triggerDelivery = () => {
+      appState.pumpStep = 3;
+      appState.pumpDelivering = true;
+      appState.pumpBolusDelivered = 0;
+      appState.pumpDeliveryProgress = 0;
+      playSuccessSound();
+      renderPumpGame();
+      startPumpDeliverySimulation();
+    };
+
+    editBtn.addEventListener('click', triggerEdit);
+    backBtn.addEventListener('click', triggerEdit);
+    
+    deliverBtn.addEventListener('click', triggerDelivery);
+    okBtn.addEventListener('click', triggerDelivery);
+  } 
+  else if (step === 3) {
+    const resetBtn = document.getElementById('btnPumpReset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        appState.pumpStep = 1;
+        appState.pumpCarbs = 45;
+        appState.pumpSugar = 180;
+        appState.pumpBolusDelivered = 0;
+        appState.pumpDelivering = false;
+        appState.pumpDeliveryProgress = 0;
+        playClickSound();
+        renderPumpGame();
+      });
+    }
+  }
+}
+
+function startPumpDeliverySimulation() {
+  if (appState.pumpTimer) clearInterval(appState.pumpTimer);
+
+  const durationMs = 3000; // 3 seconds delivery time
+  const intervalMs = 100;
+  const totalTicks = durationMs / intervalMs;
+  let tick = 0;
+
+  appState.pumpTimer = setInterval(() => {
+    tick++;
+    appState.pumpDeliveryProgress = (tick / totalTicks) * 100;
+    appState.pumpBolusDelivered = (tick / totalTicks) * appState.pumpTotalDose;
+    
+    // Play a cool digital beep sound on each tick (similar to insulin pump beep)
+    if (tick % 3 === 0) {
+      playBeepSound();
+    }
+
+    if (tick >= totalTicks) {
+      clearInterval(appState.pumpTimer);
+      appState.pumpTimer = null;
+      appState.pumpDelivering = false;
+      appState.pumpDeliveryProgress = 100;
+      appState.pumpBolusDelivered = appState.pumpTotalDose;
+      playSuccessSound();
+    }
+    
+    renderPumpGame();
+  }, intervalMs);
+}
 
 // Start application on page load
 window.addEventListener('DOMContentLoaded', init);
